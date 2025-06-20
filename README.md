@@ -41,5 +41,12 @@
 ## 👩‍💻 Dibuat oleh
 
 > Nama: *Sriasih Agustina*  
+<<<<<<< HEAD
 > Jurusan: *Teknik Informatika*  
 > Proyek UAS - SPA Web 2025
+=======
+> Jurusan: *Teknik Informatika*
+> NIM : 1124160016
+> Kelas : TI 24 SE 3
+> Proyek UAS - SPA Web 2025
+>>>>>>> c22fdbc93d1e78e2ee284b16f49dfa2bd43a2bfa
