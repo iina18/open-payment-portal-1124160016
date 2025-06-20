@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SalonCare Pay</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light">
+  <header class="flex justify-between items-center p-4 shadow bg-white dark:bg-gray-800 dark:text-white">
+    <!-- Logo dan Judul -->
+    <div class="flex items-center gap-4">
+      <img src="images/gadis imut.jpg" alt="Logo Salon" class="w-12 h-12 rounded-full shadow" />
+      <h1 class="text-xl font-bold">SALON INA</h1>
+    </div>
+    <button id="toggleMode" class="bg-pink-500 text-white px-4 py-2 rounded dark:bg-orange-400 dark:text-black">🌓 Dark Mode</button>
+  </header>
+
+  <main class="p-6"></main>
+  </main>
+  <script src="script.js"></script>
+  <body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen py-8">
+    <div class="container mx-auto max-w-4xl px-4">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">Open Payment Portal</h1>
+            <p class="text-gray-600">Global Institute</p>
+            <p class="text-gray-600">Nama : Sriasih Agustina</p>
+            <p class="text-gray-600">Nim : 1124160016</p>
+        </div>
+</body>
+</html>
+
+  <main class="p-6">
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded shadow dark:bg-gray-900">
+        <h2 class="text-lg font-bold mb-4 text-pink-600 dark:text-orange-300">Form Pembayaran</h2>
+        <form id="formPembayaran" class="space-y-4">
+          <input id="nama" type="text" placeholder="Nama" class="w-full p-2 border rounded" required>
+          <input id="email" type="email" placeholder="Email" class="w-full p-2 border rounded" required>
+          <select id="produk" class="w-full p-2 border rounded">
+            <option value="" data-harga="0">Pilih layanan...</option>
+            <option value="Cuci Blow" data-harga="50000">Cuci Blow - Rp 50.000</option>
+            <option value="Creambath" data-harga="75000">Creambath - Rp 75.000</option>
+            <option value="Warnai Rambut" data-harga="80000">Warnai Rambut - Rp 80.000</option>
+          </select>
+          <input id="jumlah" type="number" min="1" value="1" class="w-full p-2 border rounded">
+          
+          <div class="text-sm font-medium">Metode Pembayaran:</div>
+          <div class="flex gap-4 text-sm">
+            <label><input type="radio" name="metode" value="Transfer Bank" checked> Transfer Bank</label>
+            <label><input type="radio" name="metode" value="E-Wallet"> E-Wallet</label>
+            <label><input type="radio" name="metode" value="Tunai"> Tunai</label>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <input id="promo" type="text" placeholder="Kode Promo (opsional)" class="p-2 border rounded w-full">
+            <button type="button" id="terapkanPromo" class="bg-pink-400 text-white px-4 py-2 rounded hover:bg-pink-600">Terapkan</button>
+          </div>
+
+          <div id="subtotal" class="text-sm">Subtotal: Rp 0</div>
+          <div id="total" class="text-sm font-bold text-red-600">Total: Rp 0</div>
+          <button type="submit" class="w-full mt-4 bg-pink-600 text-white py-2 rounded">Proses Pembayaran</button>
+        </form>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow dark:bg-gray-900">
+        <h2 class="text-lg font-bold mb-4 text-pink-600 dark:text-orange-300">Riwayat Transaksi</h2>
+        <div class="grid grid-cols-3 text-center text-sm mb-4">
+          <div><p>Transaksi</p><p id="totalTransaksi" class="font-bold">0</p></div>
+          <div><p>Pendapatan</p><p id="totalPendapatan" class="font-bold text-green-600">Rp 0</p></div>
+          <div><p>Rata-rata</p><p id="rataRata" class="font-bold text-blue-600">Rp 0</p></div>
+        </div>
+        <div id="riwayatList" class="space-y-2 text-sm">
+          <p>Belum ada transaksi.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

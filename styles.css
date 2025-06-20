@@ -1,0 +1,8 @@
+body.light {
+  background-color: #ffffff;
+  color: #1e3a8a; /* Biru tua */
+}
+body.dark {
+  background-color: #1f2937; /* Abu gelap */
+  color: #f97316; /* Oranye */
+}
